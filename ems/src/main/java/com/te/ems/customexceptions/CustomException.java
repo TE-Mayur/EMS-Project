@@ -1,7 +1,14 @@
 package com.te.ems.customexceptions;
 
-import org.springframework.web.bind.annotation.RestControllerAdvice;
+public class CustomException extends RuntimeException {
 
-public class CustomException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CustomException(String msg) {
+		super(msg);
+	}
 
 }
