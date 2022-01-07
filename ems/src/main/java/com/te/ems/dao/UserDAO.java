@@ -9,4 +9,6 @@ import com.te.ems.beans.UserBean;
 public interface UserDAO extends JpaRepository<UserBean, String> {
 
 	public UserBean findByEmailAndPassword(String email, String password);
+
+	public UserBean findByEmail(String email);
 }
