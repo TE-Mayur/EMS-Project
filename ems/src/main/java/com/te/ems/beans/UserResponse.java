@@ -5,12 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class UserResponse {
-
-	private Boolean error;
-
+	
+	private boolean error;
+	
 	private Object data;
 
 }
