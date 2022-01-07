@@ -51,12 +51,6 @@ public class UserController {
 		UserResponse response = new UserResponse(false, service.updateDetail(emp));
 		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
 	}
-	
-	@PostMapping(path = "/update")
-	public ResponseEntity<UserResponse> update(@Valid @RequestBody UserBean emp) {
-		UserResponse response = new UserResponse(false, service.updateDetails(emp));
-		return new ResponseEntity<UserResponse>(response, HttpStatus.OK);
-	}
 
 	@PostMapping("/register")
 	public ResponseEntity<UserResponse> registration(@Valid @RequestBody UserBean user) {

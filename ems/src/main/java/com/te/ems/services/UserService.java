@@ -6,7 +6,6 @@ import com.te.ems.beans.UserBean;
 
 public interface UserService {
 
-<<<<<<< HEAD
 	public boolean login(String email, String password);
 	
 	public UserBean getUserBean(String email);
@@ -18,9 +17,4 @@ public interface UserService {
 	public boolean register(UserBean user);
 	
 	public List<UserBean> getAllData();
-=======
-	public UserBean login(String email, String password);
-
-	public UserBean updateDetails(UserBean emp);
->>>>>>> 706f3224ce7c357d1c529a30d85e078822726a61
 }
