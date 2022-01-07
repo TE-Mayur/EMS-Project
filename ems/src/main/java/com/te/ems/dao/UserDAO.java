@@ -8,4 +8,11 @@ import com.te.ems.beans.UserInfo;
 @Repository
 public interface UserDao extends JpaRepository<UserInfo, String> {
 
+
+	public UserBean findByEmailAndPassword(String email, String password);
+	
+	public UserBean findByEmail(String email);
+	
+	
+
 }

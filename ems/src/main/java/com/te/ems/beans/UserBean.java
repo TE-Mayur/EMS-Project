@@ -17,8 +17,16 @@ import lombok.Data;
 @Entity
 @Table(name = "user_emp")
 public class UserBean implements Serializable {
+<<<<<<< HEAD
+	
+	
+	
+	@NotNull(message = "Id can not be null")
+	private Integer id;
+=======
 
 	private static final long serialVersionUID = 1L;
+>>>>>>> 706f3224ce7c357d1c529a30d85e078822726a61
 
 	@Id
 	@NotEmpty(message = "email should not be empty")
@@ -30,11 +38,19 @@ public class UserBean implements Serializable {
 	private String password;
 
 	@NotEmpty(message = "username should not be empty")
+<<<<<<< HEAD
+	private String username;
+
+	@NotEmpty(message = "fullname should not be empty")
+	private String fullname;
+
+=======
 	private String user_name;
 
 	@NotEmpty(message = "fullname should not be empty")
 	private String full_name;
 
+>>>>>>> 706f3224ce7c357d1c529a30d85e078822726a61
 	@NotEmpty(message = "desgination should not be empty")
 	private String designation;
 
@@ -42,7 +58,11 @@ public class UserBean implements Serializable {
 	private Double salary;
 
 	@Min(value = 18, message = "age should not be less than 18")
+<<<<<<< HEAD
+	@Max(value = 60, message = "age should not be greater than 100")
+=======
 	@Max(value = 100, message = "age should not be greater than 100")
+>>>>>>> 706f3224ce7c357d1c529a30d85e078822726a61
 	private Integer age;
 
 }
